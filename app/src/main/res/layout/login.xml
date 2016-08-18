@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.progressivecommunications.activity.Login">
+
+    <RelativeLayout
+        android:id="@+id/login_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_background">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo"
+            android:layout_marginTop="@dimen/_105sdp"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_header"
+        android:layout_below="@+id/login_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/background">
+
+        <com.progressivecommunications.views.TextViewAgencyregular
+            android:id="@+id/login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
+            android:text="@string/login"/>
+
+        <EditText
+            android:layout_below="@+id/login_title"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:id="@+id/user_name_et"
+            android:hint="@string/user_name"
+            android:textColorHint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:inputType="text"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"
+            android:layout_alignLeft="@+id/remember_me"
+            android:layout_alignStart="@+id/remember_me"
+            android:layout_alignRight="@+id/remember_me"
+            android:layout_alignEnd="@+id/remember_me" />
+
+        <TextView
+            android:layout_below="@id/user_name_et"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#32e1e1e1"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:visibility="visible"/>
+
+        <EditText
+            android:layout_below="@+id/user_name_et"
+            android:id="@+id/password_et"
+            android:hint="@string/password"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColorHint="@color/white"
+            android:background="@drawable/edit_text_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="@dimen/_14sdp"
+            android:maxLength="20"
+            android:textColor="@color/white"
+            android:imeOptions="actionDone"
+            android:layout_alignLeft="@+id/user_name_et"
+            android:layout_alignStart="@+id/user_name_et"
+            android:layout_alignRight="@+id/user_name_et"
+            android:layout_alignEnd="@+id/user_name_et" />
+
+        <TextView
+            android:layout_below="@id/password_et"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#32e1e1e1"
+
+            android:layout_marginTop="@dimen/_2sdp"
+            android:visibility="visible"/>
+
+        <RelativeLayout
+            android:id="@+id/remember_me"
+            android:layout_below="@+id/password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <CheckBox
+                android:id="@+id/chkRem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/check_selector"
+                android:paddingLeft="5dp"
+                android:text="@string/rem_me"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp" />
+
+            <TextView
+                android:id="@+id/txtFPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/chkRem"
+                android:text="@string/forgot_password"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sdp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/submit_btn"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submit_btn"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/remember_me"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

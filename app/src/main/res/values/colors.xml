@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background">#3da2c2</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#FF0000</color>
+    <color name="event_swipe_one">#CDCDCD</color>
+    <color name="event_swipe_two">#FF4D4C</color>
+    <color name="chnage_pwd">#232222</color>
+    <color name="cur_pwd">#a8a8a8</color>
+</resources>
