@@ -22,7 +22,8 @@ import com.progressivecommunications.activity.Login;
  */
 public class Common {
 
-    public static String ServiceURL = "http://114.69.235.57:9998/procomm";
+    //public static String ServiceURL = "http://114.69.235.57:9998/procomm";
+    public static String ServiceURL = "http://progressive.sdiphp.com";
     //public static String ServiceURL = "http://192.168.0.51:9998/procomm";
 
     public static double S_LATITUDE =0.0;

@@ -150,6 +150,8 @@ public class SetNewPassword extends Activity implements View.OnClickListener {
         ChangePasswordRemoteApi.getInstance().getChangePasswordData(context, new Callback<ForgotpasswordResponse>() {
             @Override
             public void success(ForgotpasswordResponse loginResponse, Response response) {
+
+                System.out.println("success");
                 closeProgress();
 
                 if (loginResponse.status == 200) {
@@ -180,6 +182,9 @@ public class SetNewPassword extends Activity implements View.OnClickListener {
 
             @Override
             public void failure(RetrofitError error) {
+
+                System.out.println("RetrofitError "+error);
+
                 closeProgress();
                 if (error.isNetworkError()) {
                     Common.showAlert(context, getResources().getString(R.string.no_internet));

@@ -571,12 +571,16 @@ public class Dashboard extends Activity implements View.OnClickListener,Location
             {
                 time_cal.setText(String.valueOf(" ( a moment ago)"));
             }
+
+
              if (str1 >0 && str1 < 60 && diffHours == 0)
             {
                 time_cal.setText(String.valueOf(" ("+str1+" minutes ago)"));
 
             }
-             if(diffHours >0){
+
+
+            if(diffHours >0){
 
                 time_cal.setText(String.valueOf(" ("+diffHours+" hours ago)"));
             }

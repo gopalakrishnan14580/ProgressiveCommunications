@@ -35,12 +35,14 @@ public class Splash extends Activity {
                     newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     newIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(newIntent);
+                    finish();
 
                 }else{
                     Intent newIntent = new Intent(getApplicationContext(), Login.class);
                     newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     newIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(newIntent);
+                    finish();
                 }
             }
         }, 4000);
